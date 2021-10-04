@@ -5,7 +5,7 @@ This is a C# NUnit .NET Core 3.0 solution. It can be run in the Test Explorer in
 
 Packages used are: ExcelDataReader, ExcelDataReader.DataSet, JsonDiffPatch.Net, Microsoft.NET.Test.Sdk, Newtonsoft.Json, NUnit, NUnit3TestAdapter, Selenium.Support, Selenium.WebDriver, System.Text.Encoding.CodePackages
 
-I downloaded the second row data, not the first - the first row wasn't producing data for me. Currently this downloads the "Bart Durham Injury Law Non-Skippable" file.
+I downloaded the second row data, not the first. The first row wasn't producing data for me. Currently this downloads the "Bart Durham Injury Law Non-Skippable" file.
 
 I used a page object model to define page objects and actions - one page for the Login screen (LoginPage.cs) and one for the Main page (MainPage.cs). The webdriver is stored in the DriverHelper.cs class and data validation is done with the DataValidation.cs class.
 
