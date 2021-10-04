@@ -1,17 +1,15 @@
 # SightlyNUnit
 Sightly QA Automation Exercise - Selenium / C# NUnit .NET Core Solution
 
-This is a C# NUnit .NET Core solution.
-
+This is a C# NUnit .NET Core 3.0 solution. It can be run in the Test Explorer in Visual Studio.
 
 Packages used are: ExcelDataReader, ExcelDataReader.DataSet, JsonDiffPatch.Net, Microsoft.NET.Test.Sdk, Newtonsoft.Json, NUnit, NUnit3TestAdapter, Selenium.Support, Selenium.WebDriver, System.Text.Encoding.CodePackages
-
 
 I downloaded the second row data, not the first - the first row wasn't producing data for me. Currently this downloads the "Bart Durham Injury Law Non-Skippable" file.
 
 I used a page object model to define page objects and actions - one page for the Login screen (LoginPage.cs) and one for the Main page (MainPage.cs). The webdriver is stored in the DriverHelper.cs class and data validation is done with the DataValidation.cs class.
 
-The UnitTest1.cs file is where the test is executed. There is just one Test and one assertion at the end of the test, telling whether the data was valid or not. If the data does not match, the debug console will show output of the mismatched Json data. 
+The UnitTest1.cs file is where the test is executed. There is just one test (Test1) and one assertion at the end of the test, telling whether the data was valid or not. If the data does not match, the debug console will show output of the mismatched Json data. 
 
 For data validation, I convert the downloaded Excel download to Json data and validate against a Json file on my computer. I double check by comparing against both a Json string and a Json object.
 
