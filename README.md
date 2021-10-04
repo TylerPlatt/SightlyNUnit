@@ -13,7 +13,7 @@ The UnitTest1.cs file is where the test is executed. There is just one test (Tes
 
 For data validation, I convert the downloaded Excel download to Json data and validate against a Json file on my computer. I double check by comparing against both a Json string and a Json object.
 
-The validation file (Sightly.json) is included in the solution, but the code is looking for this Json file on the disk, not the one in the solution. This will work if you change the file path in line 61 of the DataValidation.cs class to a location on your hard drive where you've saved a file named Sightly.json, using the Json included in the solution. Similarly, line 26 points to my Chrome downloads directory. The most recent file in the directory is always used. Line 19 of UnitTest1.cs points to the location of the chromedriver file.
+The validation file (Sightly.json) is included in the solution, but the code is looking for this Json file on the disk, not the one in the solution. This will work if you change the file path in line 61 of the DataValidation.cs class to a location on your hard drive where you've saved a file named Sightly.json, using the Json included in the solution. Similarly, line 26 points to my Chrome downloads directory for the downloaded Excel report. The most recent file in the directory is always used. Line 19 of UnitTest1.cs points to the location of the chromedriver file.
 
 I buffered the input after the login page using Thread.Sleep to wait for the main page to load. I avoided using webdriverwait methods because they didn't account for the object being active in the dom but not clickable due to an overlaying element still showing.
 
